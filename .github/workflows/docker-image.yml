@@ -2,10 +2,11 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - 'master'
 
 jobs:
-  buildx:
+  bake:
     runs-on: ubuntu-latest
     steps:
       -
